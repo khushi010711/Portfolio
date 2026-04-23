@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khushi Shah | Web Developer</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- <button class="toggle" onclick="toggleTheme()">🌙</button> -->
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">Khushi.</div>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    <div class="hero-left" data-aos="fade-right">
+        <h1>
+  Hi, I'm Khushi 👋<br>
+  <span id="typing"></span>
+</h1>
+        <p>
+            Explore my portfolio showcasing web development projects,
+            academic achievements, and real-world solutions.
+        </p>
+        <a href="#projects" class="btn">View Portfolio</a>
+        <br>
+        <!-- <a href="resume.pdf" class="btn" download>Download Resume</a> -->
+    </div>
+
+    <div class="hero-right" data-aos="fade-left">
+        <img src="images/khushi_shah1.jpeg" alt="Profile">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <div class="about-container">
+
+        <h2>About Me</h2>
+
+        <p class="about-intro">
+            I’m a Computer Science Engineering graduate passionate about building 
+            efficient and meaningful web applications.
+        </p>
+
+        <p>
+            With a strong foundation in programming, data structures, and problem-solving, 
+            I enjoy turning ideas into real-world solutions using modern technologies 
+            like JavaScript, PHP, and React.
+        </p>
+
+        <p>
+            I am currently seeking an entry-level opportunity where I can grow as a 
+            developer, continuously learn, and contribute to impactful projects.
+        </p>
+
+        <a href="assets/Khushi_resume.pdf" download class="btn">Download Resume</a>
+
+    </div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="skills-container">
+
+    <div class="skill-card">C</div>
+    <div class="skill-card">C++</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">PHP</div>
+
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">React</div>
+    <div class="skill-card">Bootstrap</div>
+
+    <div class="skill-card">MySQL</div>
+    <div class="skill-card">MongoDB</div>
+    <div class="skill-card">Git</div>
+    <div class="skill-card">Laravel</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="project-container">
+
+    <div class="card">
+       <img src="images/project1.jpg" alt="Project">
+        <h3>Recommendation System</h3>
+        <p>AI-powered recommendation system.</p>
+
+        <!-- <a href="#" class="btn">GitHub</a>
+        <a href="#" class="btn">Live Demo</a> -->
+    </div>
+
+    <div class="card">
+       <img src="images/project2.webp" alt="Project">
+        <h3>VITA Portal</h3>
+        <p>Client website with payment integration.</p>
+
+        <!-- <a href="#" class="btn">GitHub</a>
+        <a href="#" class="btn">Live Demo</a> -->
+    </div>
+
+    <div class="card">
+       <img src="images/project3.jpg" alt="Project">
+        <h3>Logistics Platform</h3>
+        <p>Route optimization system.</p>
+
+        <!-- <a href="#" class="btn">GitHub</a>
+        <a href="#" class="btn">Live Demo</a> -->
+    </div>
+
+</div>
+</section>
+
+<section id="experience" class="experience-section">
+<h2>Experience</h2>
+
+<div class="experience-container">
+
+    <div class="experience-card">
+        <h3>Web Development Intern</h3>
+        <span class="company">Upturn India Technologies</span>
+
+        <ul>
+            <li>Built and integrated front-end and back-end functionalities for 20+ web applications.</li>
+            <li>Worked on live client projects from design to deployment.</li>
+            <li>Improved performance and user experience using modern frameworks.</li>
+        </ul>
+    </div>
+
+    <div class="experience-card">
+        <h3>Data Analytics Intern</h3>
+        <span class="company">Codtech IT Solutions</span>
+
+        <ul>
+            <li>Collected, cleaned, and analyzed datasets for business decision-making.</li>
+            <li>Created data visualizations and identified trends and insights.</li>
+            <li>Structured raw data into meaningful analytical outputs.</li>
+        </ul>
+    </div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Get In Touch</h2>
+
+<div class="contact-container">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p>Have a project or opportunity? Feel free to reach out.</p>
+
+        <p><strong>Email:</strong> khushishah.0004@gmail.com</p>
+        <p><strong>Phone:</strong> 7028850875</p>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <form action="contact.php" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Khushi Shah</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
