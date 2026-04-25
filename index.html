@@ -233,9 +233,7 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 <script>
-(function(){
-    emailjs.init("BtSxxFfvdmsv-gyvV");
-})();
+emailjs.init("BtSxxFfvdmsv-gyvV");
 
 document.querySelector(".contact-form").addEventListener("submit", function(e){
     e.preventDefault();
@@ -244,10 +242,14 @@ document.querySelector(".contact-form").addEventListener("submit", function(e){
         "service_wz299m6",
         "template_xuvf8yi",
         this
-    ).then(function(){
+    )
+    .then(function(response){
+        console.log("SUCCESS", response);
         alert("Message sent successfully!");
-    }, function(error){
-        alert("Failed to send message");
+    })
+    .catch(function(error){
+        console.log("FAILED", error);
+        alert("Failed to send message: " + JSON.stringify(error));
     });
 });
 </script>
