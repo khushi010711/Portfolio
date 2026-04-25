@@ -16,12 +16,14 @@
 
 <!-- NAVBAR -->
 <header class="navbar">
-    <div class="logo">Khushi.</div>
+    <div class="logo">💻 KS</div>
     <nav>
         <a href="#hero">Home</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -29,15 +31,16 @@
 <!-- HERO -->
 <section id="hero" class="hero">
     <div class="hero-left" data-aos="fade-right">
-        <h1>
-  Hi, I'm Khushi 👋<br>
+       <h1>
+  <span class="intro">Hi, I'm</span><br>
+  <span class="name">Khushi Shah 👋</span><br>
   <span id="typing"></span>
 </h1>
         <p>
             Explore my portfolio showcasing web development projects,
             academic achievements, and real-world solutions.
         </p>
-        <a href="#projects" class="btn">View Portfolio</a>
+        <a href="#contact" class="btn">Contact ME</a>
         <br>
         <!-- <a href="resume.pdf" class="btn" download>Download Resume</a> -->
     </div>
@@ -107,36 +110,44 @@
     <div class="card">
        <img src="project1.jpg" alt="Project">
         <h3>Movie ↔ Book Recommendation System</h3>
-       <p>Developed a cross-domain recommendation system suggesting movies from books and vice versa using TF-IDF and cosine similarity.</p>
-<p>Integrated Ollama LLM for enhanced semantic understanding and intelligent recommendations.</p>
-<p>Processed and analyzed 6000+ datasets of books and movies to improve accuracy and relevance.</p>
-<p>Built a hybrid recommendation pipeline combining statistical methods with LLM capabilities.</p>
 
-        <!-- <a href="#" class="btn">GitHub</a>
-        <a href="#" class="btn">Live Demo</a> -->
+        <ul>
+            <li>Developed a cross-domain recommendation system suggesting movies from books and vice versa using TF-IDF and cosine similarity.</li>
+            <li>Integrated Ollama LLM for enhanced semantic understanding and intelligent recommendations.</li>
+            <li>Processed and analyzed 6000+ datasets of books and movies to improve accuracy and relevance.</li>
+            <li>Built a hybrid recommendation pipeline combining statistical methods with LLM capabilities.</li>
+        </ul>
+
     </div>
 
     <div class="card">
        <img src="project2.webp" alt="Project">
-        <h3>VITA Portal</h3>
-        <p>Client website with payment integration.</p>
+        <h3>VITA Based Portal</h3>
 
-        <!-- <a href="#" class="btn">GitHub</a>
-        <a href="#" class="btn">Live Demo</a> -->
+        <ul>
+            <li>Developed a client-based web application with secure payment gateway integration.</li>
+            <li>Implemented role-based authentication with separate login systems for Admin and Members.</li>
+            <li>Designed responsive and user-friendly UI interfaces to enhance user experience.</li>
+            <li>Enabled member access control and optimized system functionality for smooth operations.</li>
+        </ul>
+
     </div>
 
     <div class="card">
        <img src="project3.jpg" alt="Project">
-        <h3>Logistics Platform</h3>
-        <p>Route optimization system.</p>
+        <h3>Logistics Transportation Platform</h3>
 
-        <!-- <a href="#" class="btn">GitHub</a>
-        <a href="#" class="btn">Live Demo</a> -->
+        <ul>
+            <li>Developed a multimodal transportation and route optimization system for import-export logistics.</li>
+            <li>Enabled shipment planning across roadways, railways, airways, and waterways.</li>
+            <li>Optimized delivery routes to reduce cost, time, and improve operational efficiency.</li>
+            <li>Designed a responsive interface for seamless logistics management and tracking.</li>
+        </ul>
+
     </div>
 
 </div>
 </section>
-
 <section id="experience" class="experience-section">
 <h2>Experience</h2>
 
@@ -178,8 +189,7 @@
         <div class="achievement-content">
             <h3>Best Collaborator Award</h3>
             <p>
-                Received during internship for outstanding teamwork, communication, 
-                and contribution to project success.
+                Received during internship for outstanding teamwork, communication, and contribution to project success. Demonstrated strong collaboration skills, adaptability, and a proactive approach in completing tasks efficiently. Consistently supported team goals and delivered quality results within deadlines.
             </p>
         </div>
     </div>
@@ -220,5 +230,26 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("BtSxxFfvdmsv-gyvV");
+})();
+
+document.querySelector(".contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_wz299m6",
+        "template_xuvf8yi",
+        this
+    ).then(function(){
+        alert("Message sent successfully!");
+    }, function(error){
+        alert("Failed to send message");
+    });
+});
+</script>
 </body>
 </html>
