@@ -230,28 +230,6 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
 
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-<script>
-emailjs.init("BtSxxFfvdmsv-gyvV");
-
-document.querySelector(".contact-form").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    emailjs.sendForm(
-        "service_wz299m6",
-        "template_xuvf8yi",
-        this
-    )
-    .then(function(response){
-        console.log("SUCCESS", response);
-        alert("Message sent successfully!");
-    })
-    .catch(function(error){
-        console.log("FAILED", error);
-        alert("Failed to send message: " + JSON.stringify(error));
-    });
-});
-</script>
 </body>
 </html>
