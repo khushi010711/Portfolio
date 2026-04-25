@@ -125,7 +125,7 @@ padding-left:10px;
 .card img{
   width:100%;
   height:auto; /* ✅ auto height */
-  max-height:200px; /* optional (keeps image controlled) */
+  /* max-height:200px; /* optional (keeps image controlled) */ */
   object-fit:cover;
   border-radius:10px;
 }
