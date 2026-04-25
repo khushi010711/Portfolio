@@ -106,22 +106,28 @@ padding-left:10px;
 
 /* CARDS */
 .card{
-background:#1e293b;
-padding:20px;
-border-radius:12px;
-margin:20px 0;
-transition:0.3s;
+  background:#1e293b;
+  padding:20px;
+  border-radius:12px;
+  margin:20px 0;
+  transition:0.3s;
+
+  /* add this */
+  display:flex;
+  flex-direction:column;
+  height:auto; /* ensures it grows with content */
 }
 
 .card:hover{
-transform:translateY(-5px);
+  transform:translateY(-5px);
 }
 
 .card img{
-width:100%;
-height:auto;
-object-fit:cover;
-border-radius:10px;
+  width:100%;
+  height:auto; /* ✅ auto height */
+  max-height:200px; /* optional (keeps image controlled) */
+  object-fit:cover;
+  border-radius:10px;
 }
 
 /* SKILLS SECTION */
