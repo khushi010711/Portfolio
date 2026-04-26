@@ -60,6 +60,18 @@ transition:0.3s;
 color:#38bdf8;
 }
 
+/* SOCIAL ICONS */
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #38bdf8; /* light blue hover */
+}
+
 /* HERO */
 .hero{
 display:flex;
